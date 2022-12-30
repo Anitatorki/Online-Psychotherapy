@@ -1,0 +1,69 @@
+<!-- Anita, torki
+         Description:Final Project
+	       Date:   2022-12-09           -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="app.css"/> 
+
+        </head>
+</head>
+<body>
+    <h2>Book an appointment</h2>
+<p>If you are a new client looking to book an appointment or have questions, book a phone call with one of our intake assistants.</p>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Feel free to email us at anita.trkh@gmail.com or call 514-213-2669. If you email us, please also provide us with a phone number.:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="../images/clinic.jpg" width="600" height="600">
+    </div>
+    <div class="column">
+      <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="pnum">Phone Number:</label>
+        <input type="number" id="pnum" name="Phonenumber" placeholder="Your phone number..">
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="Iran">Iran</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        
+        <label for="subject">What is your problem?</label>
+        <textarea id="msg" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <div class="button" ID="button">
+          <button id="submit">Submit</button>
+        </div>
+        <div class="message">
+          <div class="success" id="success">Your message successfully sent!</div>
+          <div class="danger" id="danger">Feilds can't be Empty!</div>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+</div>
+<footer>
+  <tr>
+    <th>All rights of this website belong to Analytical Psychotherapy Specialized Center.</th>
+    <th>Copyright 2022</th>
+  </tr><br>
+</footer>
+<script src="./app.js"></script>
+
+</body>
+
+</html>
